@@ -1,0 +1,2 @@
+rootProject.name = 'realpad-coding-task'
+include('app')
