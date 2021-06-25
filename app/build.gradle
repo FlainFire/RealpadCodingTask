@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+    id "io.freefair.lombok" version "6.0.0-m2"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'commons-io:commons-io:2.10.0'
+    implementation 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'org.jfree:jfreechart:1.5.3'
+}
+
+application {
+    mainClass = 'by.aakavity.App'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
